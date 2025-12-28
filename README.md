@@ -29,6 +29,45 @@
 - Join Page Created
 - Players Can Join a Server
 
+# Sprint 5
+
+## What Was Added?
+1. **Movement**: Removed the Jetpack and replaced with low gravity jumps, and reduced sprint speed to limit motion sickness. 
+2. **Environment**: Added new start game UI to the starting scene, alongside instructions for onboarding new players. Tweaked SFX to better fit environment and sync with real time interactions.
+3. **Enemies**: Added in three new martian enemy versions, updated navigation algorithms to support multiplayer, enemies consistently pull the game environment for the closest Player Object and will adjust their navigation accordingly. 
+4. **Weapons**: Added in burst fire to the mp5 model, fixed incorrect hand poses and grab points for both the mp5 and pistol.
+5. **Networking**: Added in player spawn networking, alongside a new spacesuit player model wth custom animated hands. Overhauled game logic to fully support multiplayer networking. UI screens, martian enemies, guns, and player prefab are now all networked. game logic has been updated such that any players who have died can be revived if another active player survives a wave. Updated martian enemies to use MecaAnimation component so that animations are synced across players as well. All dynamic components are synced to the host authority, and all static components (scene objects, etc) are local only. 
+
+
+## Progress By Epic
+## 1. Player Movement
+- ✚ Added low-gravity jumps and decreased sprint speed for motion sickness
+  
+## 2. Scene Development
+- ✚ New help UI and start screens
+- + Updated audio and SFX
+
+## 3. Martian Enemies
+- ✚ 3 new martian enemy variants, spawned at random
+- + Martians networked and animated over the network
+
+## 4. Gun
+- ✚ Updated mp5 to support burst fire mode
+
+## 5. Networking
+- + All dynamic objects now networked
+- + Enemy spawn and wave logic hosted by one authority and synced to all players
+- + Guns, enemies, and enemy deaths network synced
+- + New player prefab and spawn logic added
+
+  
+## Pitch Video
+[Video](https://drive.google.com/file/d/18vuMMEsBm8Ri9HWxAe8Sq418ZnwpayyY/view?usp=sharing)
+
+## Build APK
+[APK](https://drive.google.com/file/d/1umEvZt-X2qBJ133BGLRxtIyPQ1ZYKaz1/view?usp=sharing)
+
+
 # Sprint 4
 
 ## What Was Added?
@@ -53,16 +92,14 @@
 
 ## 4. Gun
 - ✚ Added: AR, MP5, Shotgun, & Rocket Launcher models
-- ✚ Implemented firing and bullet spawning logic for each model
-
-## 5. Networking
-- ✚ Bullet (45ACP Bullet Heads) networking added to pistols
+- ✚ Implemented firing and bullet spawning logic for each model.
   
 ## Progress Video
 [Video](https://drive.google.com/file/d/1gpJb3w7YjE2ujNXxBBe4JinIacngG6k8/view?usp=sharing)
 
 ## Build APK
 [APK](https://drive.google.com/file/d/1ZMffTKipgJCnQBlwru4eV1TmKWMdebvW/view?usp=sharing)
+
 
 
 # Sprint 3
@@ -98,7 +135,7 @@ This sprint was oriented towards setting up the general gameplay logic, improvin
 - ✚ Added gun & bullet networking
   
 ## Progress Video
-[Video](https://drive.google.com/file/d/1xzsVCwhVBPrTrb2JKVdJYCSM2jhwh-vU/view?usp=sharing)
+[Video](https://drive.google.com/file/d/18vuMMEsBm8Ri9HWxAe8Sq418ZnwpayyY/view?usp=sharing)
 ## Build APK
 [APK](https://drive.google.com/file/d/1HCQyUzNWgOIXVnyfa7RXT4cpz7g4lycS/view?usp=sharing)
 
